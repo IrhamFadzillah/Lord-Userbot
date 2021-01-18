@@ -1,9 +1,8 @@
+import asyncio
 from datetime import datetime
 
-from speedtest import Speedtest
-from userbot import CMD_HELP, StartTime, ALIVE_NAME
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
-import time
 
 
 async def get_readable_time(seconds: int) -> str:
@@ -33,9 +32,8 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-import asyncio
-
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
+
 
 @register(outgoing=True, pattern="^.impostor$")
 async def koc(e):
