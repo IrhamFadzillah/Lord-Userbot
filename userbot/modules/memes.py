@@ -1301,6 +1301,7 @@ async def earth(event):
     except BaseException:
         return
 
+
 @register(outgoing=True, pattern="^.hati$")
 async def earth(event):
     deq = deque(list("🖤💜💙💚💛🧡❤️🤍"))
@@ -1570,7 +1571,7 @@ async def nih(e):
                      "`\n(●_●)`"
                      "`\n />💖 *Ini Buat Kamu`"
                      "`\n                    `"
-                     "`\n(\_/)`"
+                     r"`\n(\_/)`"
                      "`\n(●_●)`"
                      "`\n💖<\  *Tapi Boong`")
 
