@@ -266,7 +266,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "vip":
-    "`.bulan`\
+    "`.bulan` ; `.hati`\
     \nUsage: liat aja.\
     \n\n`.helikopter` ; `.tembak` ; `.bundir`\
     \nUsage: liat sendiri\
