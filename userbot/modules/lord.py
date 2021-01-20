@@ -105,6 +105,6 @@ CMD_HELP.update({
     \nUsage: coba aja.\
     \n\n`.pantau`\
     \nUsage: coba aja.\
-    \n\n`.monster`\
-    \nUsage: liat sendiri."
+    \n\n`kosong`\
+    \nUsage: tunggu update selanjutnya."
 })
