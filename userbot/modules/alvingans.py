@@ -1,5 +1,5 @@
 # Lord-Userbot
-
+from time import sleep
 from userbot import CMD_HELP, bot
 from userbot.events import register
 from telethon import events
@@ -269,7 +269,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**Ganteng Doang Gak Bernyanyi (ง˙o˙)ว**")
-    sleep(1)
+    sleep(2)
     await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
     await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
