@@ -82,7 +82,7 @@ async def typewriter(typew):
                      "╬═╬ Hallo Semuanya :) \n"
                      "╬═╬☻/ \n"
                      "╬═╬/▌ \n"
-                     "╬═╬/ \\n")
+                     "╬═╬/ \ \n")
 
 
 @register(outgoing=True, pattern='^.tembak(?: |$)(.*)')
