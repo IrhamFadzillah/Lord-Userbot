@@ -90,9 +90,9 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("_/﹋\_\n"
                      "(҂`_´)\n"
-                     "<,︻╦╤─ ҉ Mau Jadi Pacarku Gak?!\n"
-                     "_/﹋\_\n")
-
+                     "<,︻╦╤─ ҉\n"
+                     "_/﹋\_\n"
+                     "**Mau Jadi Pacarku Gak?!**")
 
 @register(outgoing=True, pattern='^.bundir(?: |$)(.*)')
 async def typewriter(typew):
@@ -113,19 +113,6 @@ async def typewriter(typew):
                      "　　　　　 Ｕ Ｕ\n")
 
 
-@register(outgoing=True, pattern='^.wc(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit("───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───\n"
-                     "───█▒▒░░░░░░░░░▒▒█───\n"
-                     "────█░░█░░░░░█░░█────\n"
-                     "─▄▄──█░░░▀█▀░░░█──▄▄─\n"
-                     "█░░█─▀▄░░░░░░░▄▀─█░░█\n"
-                     "█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n"
-                     "█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n"
-                     "█░░║║║╠─║─║─║║║║║╠─░░█\n"
-                     "█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\n"
-                     "█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n")
 
 
 @register(outgoing=True, pattern='^.awkwok(?: |$)(.*)')
@@ -228,6 +215,24 @@ async def typewriter(typew):
                      "░░░░░░░░░░░░░░░░░░░\n")
 
 
+@register(outgoing=True, pattern='^.y(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("‡‡‡‡‡‡‡‡‡‡‡‡▄▄▄▄\n"
+                     "‡‡‡‡‡‡‡‡‡‡‡█‡‡‡‡█\n"
+                     "‡‡‡‡‡‡‡‡‡‡‡█‡‡‡‡█\n"
+                     "‡‡‡‡‡‡‡‡‡‡█‡‡‡‡‡█\n"
+                     "‡‡‡‡‡‡‡‡‡█‡‡‡‡‡‡█\n"
+                     "██████▄▄█‡‡‡‡‡‡████████▄\n"
+                     "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
+                     "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
+                     "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
+                     "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
+                     "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
+                     "▓▓▓▓▓▓█████‡‡‡‡‡‡‡‡‡‡‡‡██\n"
+                     "█████‡‡‡‡‡‡‡██████████")
+
+
 @register(outgoing=True, pattern='^.babi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -270,8 +275,8 @@ CMD_HELP.update({
     \nUsage: liat aja.\
     \n\n`.helikopter` ; `.tembak` ; `.bundir`\
     \nUsage: liat sendiri\
-    \n\n`.wc`\
-    \nUsage: welcome.\
+    \n\n`.y`\
+    \nUsage: jempol\
     \n\n`.awkwok`\
     \nUsage: ketawa lari.\
     \n\n`.ular` ; `.babi` ; `.ajg`\
