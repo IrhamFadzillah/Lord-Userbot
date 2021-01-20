@@ -265,9 +265,6 @@ async def typewriter(typew):
                      "╨━━┗┛┗┛━━┗┛┗┛━━┻\n")
 
 
-
-
-
 @register(outgoing=True, pattern="^.bernyanyi$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
