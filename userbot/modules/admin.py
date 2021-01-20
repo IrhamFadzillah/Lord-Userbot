@@ -585,7 +585,7 @@ async def rm_deletedacc(show):
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
-    mentions = f"<b>**✥ Daftar Admin Di {title}:</b> \n"
+    mentions = f"<b>✥ Daftar Admin Di {title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
@@ -640,7 +640,7 @@ async def pin(msg):
             "#PIN\n"
             f"ADMIN: [{user.first_name}](tg://user?id={user.id})\n"
             f"GRUP: {msg.chat.title}(`{msg.chat_id}`)\n"
-            f"KERAS: {not is_silent}",
+            f"NOTIF: {not is_silent}",
         )
 
 
