@@ -265,59 +265,50 @@ async def typewriter(typew):
                      "╨━━┗┛┗┛━━┗┛┗┛━━┻\n")
 
 
-@register(outgoing=True, pattern='^.monster(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit("▄███████▄\n"
-                     "█▄█████▄█\n"
-                     "█▼▼▼▼▼█\n"
-                     "██________█▌\n"
-                     "█▲▲▲▲▲█\n"
-                     "█████████\n"
-                     "_████\n")
 
 
-@register(outgoing=True, pattern='^.bernyanyi(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit("**Ganteng Doang Gak Bernyanyi:v**")
+
+@register(outgoing=True, pattern="^.bernyanyi$")
+async def koc(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+    await e.edit("**Ganteng Doang Gak Bernyanyi:v**")
     sleep(2)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
-    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    await e.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
-    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    await e.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
-    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    await e.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
-    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    await e.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
-    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    await e.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
-    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    await e.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
     sleep(1)
-    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    await e.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
-    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    await e.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
 
 
 CMD_HELP.update({
     "vip":
-    "`.bulan` ; `.hati`;`.bernyanyi`\
+    "`.bulan` ; `.hati` ; `.bernyanyi`\
     \nUsage: liat aja.\
-    \n\n`.helikopter` ; `.tank` ; `.tembak` ; `.bundir`\
+    \n\n`.helikopter` ; `.tank` ; `.tembak`\n`.bundir`\
     \nUsage: liat sendiri\
     \n\n`.y`\
     \nUsage: jempol\
