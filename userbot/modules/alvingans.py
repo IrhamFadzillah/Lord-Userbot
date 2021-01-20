@@ -232,7 +232,6 @@ async def typewriter(typew):
                      "█████‡‡‡‡‡‡‡██████████\n")
 
 
-
 @register(outgoing=True, pattern='^.tank(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -312,7 +311,6 @@ async def typewriter(typew):
     await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
     sleep(1)
     await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
-    
 
 
 CMD_HELP.update({
