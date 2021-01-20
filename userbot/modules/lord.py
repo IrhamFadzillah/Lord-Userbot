@@ -105,6 +105,6 @@ CMD_HELP.update({
     \nUsage: coba aja.\
     \n\n`.pantau`\
     \nUsage: coba aja.\
-    \n\n`kosong`\
-    \nUsage: gak guna, bukan cmd."
+    \n\n`.monster`\
+    \nUsage: liat sendiri."
 })
