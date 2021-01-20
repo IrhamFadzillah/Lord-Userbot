@@ -314,6 +314,7 @@ async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("`mf g dl` **ミ(ノ;_ _)ノ=3** ")
 
+
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
 
