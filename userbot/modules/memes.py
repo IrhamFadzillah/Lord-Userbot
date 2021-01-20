@@ -1301,6 +1301,17 @@ async def earth(event):
     except BaseException:
         return
 
+@register(outgoing=True, pattern="^.hati$")
+async def earth(event):
+    deq = deque(list("🖤💜💙💚💛🧡❤️🤍"))
+    try:
+        for x in range(32):
+            await sleep(0.1)
+            await event.edit("".join(deq))
+            deq.rotate(1)
+    except BaseException:
+        return
+
 
 @register(outgoing=True, pattern="^.monyet$")
 async def earth(event):
@@ -1559,7 +1570,7 @@ async def nih(e):
                      "`\n(●_●)`"
                      "`\n />💖 *Ini Buat Kamu`"
                      "`\n                    `"
-                     r"`\n(\_/)`"
+                     "`\n(\_/)`"
                      "`\n(●_●)`"
                      "`\n💖<\  *Tapi Boong`")
 
@@ -1581,7 +1592,7 @@ async def taco(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("\n{\__/}"
                      "\n(●_●)"
-                     "\n( >🌮 Mau Tai Ku?")
+                     "\n( >💩 Mau Tai Ku?")
 
 
 @register(outgoing=True, pattern=r"^\.paw$")
@@ -1696,15 +1707,15 @@ async def koc(e):
 @register(outgoing=True, pattern="^.gas$")
 async def gas(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("___________________🚑")
-        await e.edit("________________🚑___")
-        await e.edit("______________🚑_____")
-        await e.edit("___________🚑________")
-        await e.edit("________🚑___________")
-        await e.edit("_____🚑______________")
-        await e.edit("__🚑_________________")
-        await e.edit("🚑___________________")
-        await e.edit("__Lah___Kok__Hilang__")
+        await e.edit("__________🚚___🚒___🚓__🚑")
+        await e.edit("_______🚚___🚒____🚓__🚑___")
+        await e.edit("____🚚____🚒____🚓__🚑_____")
+        await e.edit("__🚚____🚒___🚓__🚑________")
+        await e.edit("🚚___🚒___🚓__🚑___________")
+        await e.edit("🚒___🚓__🚑________________")
+        await e.edit("🚓__🚑_____________________")
+        await e.edit("🚑_________________________")
+        await e.edit("___________________________")
         await e.edit(choice(FACEREACTS))
 
 
@@ -1811,6 +1822,6 @@ CMD_HELP.update({
     r"\ n> .nou; .bot; .gey; .tf; .paw; .tai; .nih;"
     r"\ n> .fag; .gtfo; .stfu; .lol; .lool; .fail; .leave"
     r"\ n> .iwi; .sayhi; .koc; .gas; .earth; .love; .rain"
-    r"\ n> .penis; .emo; .fuck; .ok; .skull; .teksbiru; .monyet"
-    "\n\n\nSemoga Harimu Menyenangkan -Alvin."
+    r"\ n> .penis; .emo; .fuck; .ok; .skull ; .monyet"
+    "\n\n\n**Semoga Harimu Menyenangkan**\n`-Alvin`"
 })
