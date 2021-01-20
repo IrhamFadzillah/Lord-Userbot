@@ -1,6 +1,5 @@
-#Lord-Userbot
+# Lord-Userbot
 
-from time import sleep
 from userbot import CMD_HELP, bot
 from userbot.events import register
 from telethon import events
@@ -26,44 +25,43 @@ async def _(event):
 
         animation_chars = [
             "🌗",
-        "🌘",
-        "🌑",
-        "🌒",
-        "🌓",
-        "🌔",
-        "🌕",
-        "🌖",
-        "🌗",
-        "🌘",
-        "🌑",
-        "🌒",
-        "🌓",
-        "🌔",
-        "🌕",
-        "🌖",
-        "🌗",
-        "🌘",
-        "🌑",
-        "🌒",
-        "🌓",
-        "🌔",
-        "🌕",
-        "🌖",
-        "🌗",
-        "🌘",
-        "🌑",
-        "🌒",
-        "🌓",
-        "🌔",
-        "🌕",
-        f"🌖"]
+            "🌘",
+            "🌑",
+            "🌒",
+            "🌓",
+            "🌔",
+            "🌕",
+            "🌖",
+            "🌗",
+            "🌘",
+            "🌑",
+            "🌒",
+            "🌓",
+            "🌔",
+            "🌕",
+            "🌖",
+            "🌗",
+            "🌘",
+            "🌑",
+            "🌒",
+            "🌓",
+            "🌔",
+            "🌕",
+            "🌖",
+            "🌗",
+            "🌘",
+            "🌑",
+            "🌒",
+            "🌓",
+            "🌔",
+            "🌕",
+            f"🌖"]
 
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
 
             await event.edit(animation_chars[i % 32])
-
 
 
 @register(outgoing=True, pattern='^.helikopter(?: |$)(.*)')
@@ -96,7 +94,6 @@ async def typewriter(typew):
                      "_/﹋\_\n")
 
 
-
 @register(outgoing=True, pattern='^.bundir(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -116,7 +113,6 @@ async def typewriter(typew):
                      "　　　　　 Ｕ Ｕ\n")
 
 
-
 @register(outgoing=True, pattern='^.wc(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -132,7 +128,6 @@ async def typewriter(typew):
                      "█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n")
 
 
-
 @register(outgoing=True, pattern='^.awkwok(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -141,9 +136,6 @@ async def typewriter(typew):
                      "▄▀──█▄▄──────█─█▄▄\n"
                      "─▄▄▄▀──▀▄───▄▄▄▀──▀▄\n"
                      "─▀───────▀▀─▀───────▀▀\n`Awkwokwokwok..`")
-
-
-
 
 
 @register(outgoing=True, pattern='^.ular(?: |$)(.*)')
@@ -236,7 +228,6 @@ async def typewriter(typew):
                      "░░░░░░░░░░░░░░░░░░░\n")
 
 
-
 @register(outgoing=True, pattern='^.babi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -250,9 +241,6 @@ async def typewriter(typew):
                      "┈┈┈┈┈┗┻┛┗┻┛┈┈┈┈\n")
 
 
-
-
-
 @register(outgoing=True, pattern='^.ajg(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -262,6 +250,7 @@ async def typewriter(typew):
                      "╢╰━┫┈┈┈┈┈╰╯╰┳━╯┣\n"
                      "╢┊┊┃┏┳┳━━┓┏┳┫┊┊┣\n"
                      "╨━━┗┛┗┛━━┗┛┗┛━━┻\n")
+
 
 @register(outgoing=True, pattern='^.monster(?: |$)(.*)')
 async def typewriter(typew):
@@ -273,7 +262,6 @@ async def typewriter(typew):
                      "█▲▲▲▲▲█\n"
                      "█████████\n"
                      "_████\n")
-
 
 
 CMD_HELP.update({
