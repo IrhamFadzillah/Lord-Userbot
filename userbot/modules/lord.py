@@ -80,8 +80,6 @@ async def typewriter(typew):
                      "\n**Punten**")
 
 
-
-
 @register(outgoing=True, pattern='^.pantau(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
