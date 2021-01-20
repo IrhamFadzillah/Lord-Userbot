@@ -112,7 +112,7 @@ async def typewriter(typew):
                      "▒▒▒▒▒▒▒▒█▓▓▓▓▓█▓▓▓▓▓█\n"
                      "▒▒▒▒▒████▓▓▓▓▓█▓▓▓▓▓████\n"
                      "▒▒▒▒█▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓█\n")
-    sleep(3)  
+    sleep(3)
     await typew.edit("▒▒▒▒▒▒▒▒▒██▒▒▒▒███▒▒▒▒██\n"
                      "▒▒▒▒▒▒▒▒█▓▓█▒██▓▓▓██▒█▓▓█\n"
                      "▒▒▒▒▒▒▒█▓▒▒▓█▓▓▓▓▓▓▓█▓▒▒▓█\n"
@@ -125,7 +125,6 @@ async def typewriter(typew):
                      "▒█▓▓█▒▒█▓▓▒▒▓▒▒███▒▒▓▒▒▓▓█\n"
                      "▒█▓▓█▒▒█▓▓▒▒▓▒▒▒█▒▒▒▓▒▒▓▓█\n")
 
-  
 
 @register(outgoing=True, pattern='^.pantau(?: |$)(.*)')
 async def typewriter(typew):
