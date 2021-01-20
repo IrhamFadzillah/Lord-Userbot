@@ -229,7 +229,17 @@ async def typewriter(typew):
                      "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
                      "▓▓▓▓▓▓█‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡█\n"
                      "▓▓▓▓▓▓█████‡‡‡‡‡‡‡‡‡‡‡‡██\n"
-                     "█████‡‡‡‡‡‡‡██████████")
+                     "█████‡‡‡‡‡‡‡██████████\n")
+
+
+
+@register(outgoing=True, pattern='^.tank(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("█۞███████]▄▄▄▄▄▄▄▄▄▄▃ \n"
+                     "▂▄▅█████████▅▄▃▂…\n"
+                     "[███████████████████]\n"
+                     "◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤\n")
 
 
 @register(outgoing=True, pattern='^.babi(?: |$)(.*)')
@@ -268,11 +278,48 @@ async def typewriter(typew):
                      "_████\n")
 
 
+@register(outgoing=True, pattern='^.bernyanyi(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**Ganteng Doang Gak Bernyanyi:v**")
+    sleep(2)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    sleep(1)
+    await typew.edit("**♪┏(・o･)┛♪┗ ( ･o･) ┓**")
+    sleep(1)
+    await typew.edit("**♪┗ ( ･o･) ┓♪┏ (・o･) ┛♪**")
+    
+
+
 CMD_HELP.update({
     "vip":
-    "`.bulan` ; `.hati`\
+    "`.bulan` ; `.hati`;`.bernyanyi`\
     \nUsage: liat aja.\
-    \n\n`.helikopter` ; `.tembak` ; `.bundir`\
+    \n\n`.helikopter` ; `.tank` ; `.tembak` ; `.bundir`\
     \nUsage: liat sendiri\
     \n\n`.y`\
     \nUsage: jempol\
