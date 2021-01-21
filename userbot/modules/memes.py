@@ -1571,9 +1571,9 @@ async def nih(e):
                      "`\n(●_●)`"
                      "`\n />💖 *Ini Buat Kamu`"
                      "`\n                    `"
-                     r"`\n(\_/)`"
+                     r"`(\_/)`"
                      "`\n(●_●)`"
-                     "`\n💖<\  *Tapi Boong`")
+                     "`\n💖<\  *Tapi Bo'ong`")
 
 
 @register(outgoing=True, pattern=r"^\.fag$")
