@@ -1,4 +1,3 @@
-from time import sleep
 from platform import uname
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
@@ -30,7 +29,6 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Wa'alaikumussalam")
-
 
 
 CMD_HELP.update({
