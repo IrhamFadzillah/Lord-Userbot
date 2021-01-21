@@ -97,7 +97,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "lord":
-    "`.lord` ; `.lordalive`\
+    "`.lord` ; `.lordalive` ; `.lordping`\
     \nUsage: bot.\
     \n\n`.sadboy`\
     \nUsage: hiks\
