@@ -91,8 +91,8 @@ async def typewriter(typew):
     await typew.edit("_/﹋\_\n"
                      "(҂`_´)\n"
                      "<,︻╦╤─ ҉\n"
-                     r"_/﹋\_\n"
-                     "**Mau Jadi Pacarku Gak?!**")
+                     "_/﹋\_"
+                     "\n**Mau Jadi Pacarku Gak?!**")
 
 
 @register(outgoing=True, pattern='^.bundir(?: |$)(.*)')
