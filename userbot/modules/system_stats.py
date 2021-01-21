@@ -264,11 +264,10 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-
 @register(outgoing=True, pattern=r"^\.(?:lordalive|lordon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
-    uptime = await get_readable_time((time.time() - StartTime))
+    await get_readable_time((time.time() - StartTime))
     output = (
         f" **┗┓LORD USERBOT┏┛** \n\n"
         f" **Lord:** \n"
@@ -298,6 +297,7 @@ async def amireallyalive(alive):
         await alive.edit(output)
         await asyncio.sleep(100)
         await alive.delete()
+
 
 @register(outgoing=True, pattern=r"^\.aliveu")
 async def amireallyaliveuser(username):
