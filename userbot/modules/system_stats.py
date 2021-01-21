@@ -267,11 +267,11 @@ async def amireallyalive(alive):
         f" `{DEFAULTUSER}` \n"
         f"♛ **Username:** \n"
         f" `@{user.username}` \n\n"
-        f"__Lord-Userbot Adalah Userbot Khusus__"
+        f"__Lord-Userbot Adalah Userbot Khusus__ "
         f"__Yang Digunakan Untuk Bersenang-Senang__ "
         f"__Di Telegram__ __Versi Bot Yang Digunakan__ `{BOT_VER}` "
         f"__Jumlah Modul Dalam Lord Userbot__ `{len(modules)}` \n\n"
-        f" ❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Grup Userbot:**[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)\n")
+        f"❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Grup Userbot:**[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
