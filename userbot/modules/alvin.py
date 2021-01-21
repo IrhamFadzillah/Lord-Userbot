@@ -28,12 +28,43 @@ async def koc(e):
         await e.edit("SAYANG")
         await e.edit("KAMU")
         await e.edit("I LOVE YOUUUU")
-        await e.edit("YOUR MY BABY")
+        await e.edit("MY BABY")
         await e.edit("💕💞💘💝")
         await e.edit("💘💕💞💝")
         await e.edit("SAYANG KAMU💞")
 
 
+@register(outgoing=True, pattern='^.dino(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`DIN DINNN.....`")
+    sleep(1)
+    await typew.edit("`DINOOOOSAURUSSSSS!!`")
+    sleep(1)
+    await typew.edit("`🏃          `LARII`               🦖`")
+    await typew.edit("`🏃                               🦖`")
+    await typew.edit("`🏃                              🦖`")
+    await typew.edit("`🏃                             🦖`")
+    await typew.edit("`🏃          `LARII`          🦖`")
+    await typew.edit("`🏃                         🦖`")
+    await typew.edit("`🏃                       🦖`")
+    await typew.edit("`🏃                      🦖`")
+    await typew.edit("`🏃                    🦖`")
+    await typew.edit("`🏃                  🦖`")
+    await typew.edit("`🏃                🦖`")
+    await typew.edit("`🏃              🦖`")
+    await typew.edit("`🏃             🦖`")
+    await typew.edit("`DIA SEMAKIN MENDEKAT!!!`")
+    sleep(1)
+    await typew.edit("`🏃     🧎    🦖`")
+    await typew.edit("`🏃        🦖`")
+    await typew.edit("`🏃      🦖`")
+    await typew.edit("`🏃    🦖`")
+    await typew.edit("`Dahlah Pasrah Aja`")
+    sleep(1)
+    await typew.edit("`🧎🦖`")
+    sleep(2)
+    await typew.edit("`-TAMAT-`")
 @register(outgoing=True, pattern="^.gabut$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
@@ -294,7 +325,6 @@ async def koc(e):
 @register(outgoing=True, pattern='^.terkadang(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(1)
     await typew.edit("`Terkadang`")
     sleep(1)
     await typew.edit("`Mencintai Seseorang`")
@@ -379,7 +409,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "gabut":
-    "`.gabut`\
+    "`.gabut` ; `.dino`\
     \nUsage: ntahlah gabut doang.\
     \n\n`.gombal`\
     \nUsage: buat bercanda\
