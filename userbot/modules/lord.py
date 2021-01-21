@@ -97,14 +97,14 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "lord":
-    "`.lord`\
+    "`.lord` ; `.lordalive`\
     \nUsage: bot.\
     \n\n`.sadboy`\
     \nUsage: hiks\
-    \n\n`.punten`\
+    \n\n`.punten` ; `.pantau`\
     \nUsage: coba aja.\
-    \n\n`.pantau`\
-    \nUsage: coba aja.\
+    \n\n`kosong`\
+    \nUsage: tunggu update selanjutnya.\
     \n\n`kosong`\
     \nUsage: tunggu update selanjutnya."
 })
