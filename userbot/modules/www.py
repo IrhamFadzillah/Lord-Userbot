@@ -40,6 +40,21 @@ async def get_readable_time(seconds: int) -> str:
 
     return up_time
 
+@register(outgoing=True, pattern="^.lordping$")
+async def pingme(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("`Lord Ping..............`")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"**忄 Lord Ping 忄**\n\n"
+                    f"✱ **Ping:** "
+                    f"`%sms` \n"
+                    f"✱ **Uptime:** "
+                    f"`{uptime}` \n"
+                    f"✦҈͜͡➳ **My Lord:** `{ALIVE_NAME}`" % (duration))
+
 
 @register(outgoing=True, pattern="^.speed$")
 async def speedtst(spd):
