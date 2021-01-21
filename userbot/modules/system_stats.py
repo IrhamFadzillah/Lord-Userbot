@@ -1,11 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
-""" Userbot module for getting information about the server. """
-
-
+#Ya 
 import asyncio
 from asyncio import create_subprocess_exec as asyncrunapp
 from asyncio.subprocess import PIPE as asyncPIPE
@@ -229,7 +222,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f" **LORD USERBOT** \n"
+        f" **┗┓LORD USERBOT┏┛** \n"
         f"✘ __Lord__ \n"
         f": `{DEFAULTUSER}` \n"
         f"✘ __Username__ \n"
@@ -270,15 +263,15 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f" **┗┓LORD USERBOT┏┛** \n\n"
-        f" **Lord:** \n"
+        f"♛ **Lord:** \n"
         f" `{DEFAULTUSER}` \n"
-        f" **Username:** \n"
+        f"♛ **Username:** \n"
         f" `@{user.username}` \n\n"
-        f"__Lord-Userbot Adalah Userbot Khusus__\n"
-        f"__Yang Digunakan Untuk Bersenang-Senang__ \n"
-        f"__Di Telegram__ __Versi Bot Yang Digunakan__ `{BOT_VER}` \n"
+        f"__Lord-Userbot Adalah Userbot Khusus__"
+        f"__Yang Digunakan Untuk Bersenang-Senang__ "
+        f"__Di Telegram__ __Versi Bot Yang Digunakan__ `{BOT_VER}` "
         f"__Jumlah Modul Dalam Lord Userbot__ `{len(modules)}` \n\n"
-        f" ❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Grup Lord-Userbot:**[Tekan Disini](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)\n")
+        f" ❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Grup Userbot:**[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
