@@ -65,6 +65,8 @@ async def typewriter(typew):
     await typew.edit("`🧎🦖`")
     sleep(2)
     await typew.edit("`-TAMAT-`")
+
+
 @register(outgoing=True, pattern="^.gabut$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
