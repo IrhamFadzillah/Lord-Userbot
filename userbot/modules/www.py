@@ -40,6 +40,7 @@ async def get_readable_time(seconds: int) -> str:
 
     return up_time
 
+
 @register(outgoing=True, pattern="^.lping$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
@@ -55,7 +56,6 @@ async def pingme(pong):
                     f"`{uptime}` \n" % (duration))
 
 
-
 @register(outgoing=True, pattern="^.xping$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
@@ -69,8 +69,6 @@ async def pingme(pong):
                     f"`%sms` \n"
                     f"➠ __Uptime:__ "
                     f"`{uptime}` \n" % (duration))
-             
-
 
 
 @register(outgoing=True, pattern="^.lordping$")
