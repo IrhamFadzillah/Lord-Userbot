@@ -386,9 +386,9 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("Userbot [LORD](https://github.com/Zora24/Lord-Userbot.git) Buat Userbotmu Sendiri Tekan LORD Lalu Tekan Deoloy")
+                await event.reply("Lord-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/Zora24/Lord-Userbot.git)")
             else:
-                await event.reply(f"`Hai {ALIVE_NAME}\n\nKau Adalah Lordku:)`")
+                await event.reply(f"`Hai Lord {ALIVE_NAME}\n\nApa Kabarmu Lord:)`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
