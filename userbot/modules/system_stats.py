@@ -257,6 +257,49 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
+@register(outgoing=True, pattern=r"^\.(?:xalive|xon)\s?(.)?")
+async def amireallyalive(alive):
+    user = await bot.get_me()
+    uptime = await get_readable_time((time.time() - StartTime))
+    output = (
+        f" **┗┓▬▬▬▬▬ஜ۩♛۩ஜ▬▬▬▬▬┏┛** \n"
+        f" **LORD USERBOT** \n"
+        f"❃ **Lord** \n"
+        f": `{DEFAULTUSER}` \n"
+        f"❃ **Username** \n"
+        f": `@{user.username}` \n"
+        f"❃ **Telethon** \n"
+        f": `Versi {version.__version__}` \n"
+        f"❃ **Python** \n"
+        f": `Versi {python_version()}` \n"
+        f"❃ **Versi Bot** \n"
+        f": `{BOT_VER}` \n"
+        f"❃ **Uptime** \n"
+        f": `{uptime}` \n"
+        f"❃ **Modul** \n"
+        f": `{len(modules)}` \n"
+        f" **▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬** ")
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await alive.delete()
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            await asyncio.sleep(200)
+            await msg.delete()
+        except BaseException:
+            await alive.edit(
+                output + "\n\n *`The provided logo is invalid."
+                "\nMake sure the link is directed to the logo picture`"
+            )
+            await asyncio.sleep(100)
+            await alive.delete()
+    else:
+        await alive.edit(output)
+        await asyncio.sleep(100)
+        await alive.delete()
+
+
+
 @register(outgoing=True, pattern=r"^\.(?:lordalive|lordon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
