@@ -262,22 +262,14 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f" **▬▬▬▬▬▬ஜ۩♛۩ஜ▬▬▬▬▬▬** \n"
-        f"**♕ LORD USERBOT** \n"
-        f"❃ **Lord** \n"
-        f": `{DEFAULTUSER}` \n"
-        f"❃ **Username** \n"
-        f": `@{user.username}` \n"
-        f"❃ **Telethon** \n"
-        f": `Versi {version.__version__}` \n"
-        f"❃ **Python** \n"
-        f": `Versi {python_version()}` \n"
-        f"❃ **Versi Bot** \n"
-        f": `{BOT_VER}` \n"
-        f"❃ **Uptime** \n"
-        f": `{uptime}` \n"
-        f"❃ **Modul** \n"
-        f": `{len(modules)}` \n"
+        f" **▬▬▬▬▬▬❙۩♛۩❙▬▬▬▬▬▬** \n\n"
+        f"      **♕ LORD USERBOT ♕** \n"
+        f"❃ **Lord**     ➥ `{DEFAULTUSER}` \n"
+        f"❃ **Username** ➥ `@{user.username}` \n"
+        f"❃ **Telethon** ➥ `Versi {version.__version__}` \n"
+        f"❃ **Python**   ➥ `Versi {python_version()}` \n"
+        f"❃ **Bot**      ➥ Versi`{BOT_VER}` \n"
+        f"❃ **Modul**    ➥ `{len(modules)}` \n"
         f" **▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬** ")
     if ALIVE_LOGO:
         try:
