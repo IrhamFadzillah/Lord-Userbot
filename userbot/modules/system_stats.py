@@ -263,14 +263,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f" **▬▬▬▬▬▬❙۩♛۩❙▬▬▬▬▬▬** \n\n"
-        f"      **♕ LORD USERBOT ♕** \n"
-        f"❃ **Lord**     ➥ `{DEFAULTUSER}` \n"
-        f"❃ **Username** ➥ `@{user.username}` \n"
-        f"❃ **Telethon** ➥ `Versi {version.__version__}` \n"
-        f"❃ **Python**   ➥ `Versi {python_version()}` \n"
-        f"❃ **Bot**      ➥ Versi`{BOT_VER}` \n"
-        f"❃ **Modul**    ➥ `{len(modules)}` \n"
-        f" **▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬** ")
+        f"      **♕ LORD USERBOT ♕** \n\n"
+        f"❃ **Lord** \n➥ `{DEFAULTUSER}` \n"
+        f"❃ **Username** \n➥ `@{user.username}` \n"
+        f"❃ **Telethon** \n➥ `Versi {version.__version__}` \n"
+        f"❃ **Python**   \n➥ `Versi {python_version()}` \n"
+        f"❃ **Versi Bot**\n➥ `{BOT_VER}` \n"
+        f"❃ **Modul**    \n➥ `{len(modules)}` \n"
+        f" **▬▬▬▬▬▬❙۩★۩❙▬▬▬▬▬▬** ")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
