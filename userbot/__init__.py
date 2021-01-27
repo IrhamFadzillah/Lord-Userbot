@@ -176,7 +176,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/62dc59b2013a48f9cc8f3.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/7c29c42084e4bca205bc8.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -386,9 +386,9 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("Lord-Userbot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/Zora24/Lord-Userbot.git)")
+                await event.reply("SmokingBot, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/IrhamFadzillah/Lord-Userbot.git)")
             else:
-                await event.reply(f"`Hai Lord {ALIVE_NAME}\n\nApa Kabarmu Lord:)`")
+                await event.reply(f"`Hai Bro {ALIVE_NAME}\n\nApa Kabarmu Bro?:)`")
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
@@ -400,7 +400,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
                     text="{}\nTotal Modul: {}\n               \n🖥 **Main Menu** 🖥\n".format(
-                        "ALVIN✗BOT BANTUAN MODUL",
+                        "SmokingBot BANTUAN MODUL",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -408,22 +408,22 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "ALVIN✗BOT Helper",
+                    "SmokingBot Helper",
                     text="Daftar Modul",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    "ALVIN✗BOT",
+                    "SmokingBot",
                     text="""You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/Zora24/Lord-Userbot"),
+                                "https://github.com/IrhamFadzillah/Lord-Userbot"),
                             custom.Button.url(
                                 "Support",
-                                "t.me/liualvinas")],
+                                "https://t.me/StayWithMe69")],
                     ],
                     link_preview=False,
                 )
