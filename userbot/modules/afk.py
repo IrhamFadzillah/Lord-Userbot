@@ -281,4 +281,3 @@ CMD_HELP.update(
         "you telling them that you are AFK(reason)."
         "\n\n>`.unoff`"
         "\nUsage: Switches you off from AFK mode"
-    }
