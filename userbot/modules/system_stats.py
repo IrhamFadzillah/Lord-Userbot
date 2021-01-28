@@ -158,9 +158,9 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**SmokingBot Versi:** \n "
+            "**SmokingBot Versi:** \n "
             f"{verout}"
-            "\n**☛**Revisi:**\n "
+            "\n**Revisi:**\n "
             f"{revout}"
         )
     else:
