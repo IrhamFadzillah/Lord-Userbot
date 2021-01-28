@@ -91,7 +91,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`SmokingBot Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu Lord.....`")
+            await event.edit("`SmokingBot Berhasil Di Deploy!\n" "Restarting, Tunggu Lah Kintil.....`")
             await asyncio.sleep(15)
             await event.delete()
 
@@ -194,7 +194,7 @@ async def upstream(event):
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**✣ Pembaruan Untuk Lord-Userbot [{ac_br}]:\n\n✣ Pembaruan:**\n`{changelog}`'
+        changelog_str = f'** Pembaruan Untuk SmokingBot [{ac_br}]:\n\n Pembaruan:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -208,18 +208,18 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update Lord Userbot**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari SmokingBot.__')
+        return await event.respond('**Perintah Untuk Update SmokingBot**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari SmokingBot.__')
 
     if force_update:
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`✲ Proses Update SmokingBot, Loading....1%`')
-        await event.edit('`✲ Proses Update SmokingBot, Loading....20%`')
-        await event.edit('`✲ Proses Update SmokingBot, Loading....35%`')
-        await event.edit('`✲ Proses Update SmokingBot, Loading....77%`')
-        await event.edit('`✲ Proses Update SmokingBot, Updating...90%`')
-        await event.edit('`✲ Proses Update SmokingBot, Mohon Menunggu Lord....100%`')
+        await event.edit('` Proses Update SmokingBot, Loading....1%`')
+        await event.edit('` Proses Update SmokingBot, Loading....20%`')
+        await event.edit('` Proses Update SmokingBot, Loading....35%`')
+        await event.edit('` Proses Update SmokingBot, Loading....77%`')
+        await event.edit('` Proses Update SmokingBot, Updating...90%`')
+        await event.edit('` Proses Update SmokingBot, Mohon Menunggu Lord....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
