@@ -532,12 +532,6 @@ async def _(event):
     hecked = (f"**Targeted Account Hacked**\n\n```Pay 69$ To``` {heckerman}``` "
               "To Remove This Hack```")
 
-        for i in animation_ttl:
-
-            await asyncio.sleep(animation_interval)
-
-            await event.edit(animation_chars[i % 11])
-
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
