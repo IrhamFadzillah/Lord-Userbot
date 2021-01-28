@@ -396,12 +396,12 @@ with bot:
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
-                    text="{}\nTotal Modul: {}\n               \n🖥 **Main Menu** 🖥\n".format(
+                    text="{}\nTotal Modul: {}\n               \n **Main Menu** \n".format(
                         "SmokingBot BANTUAN MODUL",
                         len(dugmeler),
                     ),
                     buttons=buttons,
-                    link_preview=True,
+                    link_preview=False,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
