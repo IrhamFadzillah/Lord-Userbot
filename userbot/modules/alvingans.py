@@ -114,7 +114,7 @@ async def typewriter(typew):
                      "　　　　　 Ｕ Ｕ\n")
 
 
-@register(outgoing=True, pattern='^.awkwok(?: |$)(.*)')
+@register(outgoing=True, pattern='^.run(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("────██──────▀▀▀██\n"
