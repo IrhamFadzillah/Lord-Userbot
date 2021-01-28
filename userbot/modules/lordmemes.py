@@ -479,25 +479,12 @@ async def _(event):
         await event.edit("EVERyBOdy wAs GanGeSTar UNtIL I ArRivEd 😎😎😎")
 
 
-@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
-async def _(event):
-
-    if event.fwd_from:
-
-        return
-
-    animation_interval = 2
-
-    animation_ttl = range(0, 11)
-
-    input_str = event.pattern_match.group(1)
-
-    if input_str == "hack":
-
-        await event.edit(input_str)
-
-        animation_chars = [
-       "```Connecting To Private Server \\```",
+@bot.on_cmd("hack$", about={'header': "kensar hacking animation"})
+async def hack_func(message):
+    user = await message.client.get_user_dict(message.from_user.id)
+    heckerman = user['mention']
+    animation_chars = [
+        "```Connecting To Private Server \\```",
         "```Connecting To Private Server |```",
         "```Connecting To Private Server /```",
         "```Connecting To Private Server \\```",
@@ -531,7 +518,11 @@ async def _(event):
     ]
     hecked = (f"**Targeted Account Hacked**\n\n```Pay 69$ To``` {heckerman}``` "
               "To Remove This Hack```")
-
+    max_ani = len(animation_chars)
+    for i in range(max_ani):
+        await asyncio.sleep(2)
+        await message.edit(animation_chars[i % max_ani])
+    await message.edit(hecked)
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
